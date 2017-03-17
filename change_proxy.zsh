@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 function get_password() {
-    cat .secret | grep PASSWORD | sed -e "s/PASSWORD=\(.*\)/\1/"
+    cat ~/.config/linux-tools/.secret | grep PASSWORD | sed -e "s/PASSWORD=\(.*\)/\1/"
 }
 
 function get_proxy_mode() {
